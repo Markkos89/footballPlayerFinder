@@ -20,19 +20,23 @@ const FinderPlayerForm = ({ onSubmit, initialValues, selectOptions }) => {
                         <div className="level" >
                             <div>
                                 <Field className="input" type="text" name="playerName" placeholder="Player Name"/>
-                                <ErrorMessage name="playerName" />
+                                <div style={{minHeight: 20}}>
+                                    <ErrorMessage name="playerName" />
+                                </div>
                             </div>
                             <div className="select" >
                                 <Field component="select" name="position"> 
                                 {
                                     renderOptions(selectOptions)
                                 } 
-                                </Field> 
+                                </Field>
                             </div>
                             <div>
                                 <Field className="input" type="text" name="age" placeholder="Age" />
-                                <ErrorMessage name="age" />
-                            </div>                           
+                                <div style={{minHeight: 20}}>
+                                    <ErrorMessage name="age" />
+                                </div>
+                            </div>
                             <button className="button" type="submit" disabled={ isSubmitting } >
                                 Search
                             </button> 
