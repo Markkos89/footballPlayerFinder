@@ -16,27 +16,29 @@ const renderPlayers = players => players.map((e, i) => {
 });
 
 const TableResultFinder = ({ players }) => {
-  if(!players.length) return(<div></div>);
-
-  return(
-    <div className="section">
-      <table className="table is-fullwidth">
-        <thead>
-          <tr>
-            <th>Player</th>
-            <th>Position</th>
-            <th>Team</th>
-            <th>Age</th>
-          </tr>
-        </thead>
-        <tbody>
-          {
-            renderPlayers(players)
-          }
-        </tbody>
-      </table>
-    </div>
-  )
+  if(!players.length){
+    return(<div></div>);
+  } else{
+    return(
+      <div className="section">
+        <table className="table is-fullwidth">
+          <thead>
+            <tr>
+              <th>Player</th>
+              <th>Position</th>
+              <th>Team</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              renderPlayers(players)
+            }
+          </tbody>
+        </table>
+      </div>
+    )
+  }
 };
 
         // players.map((e, i) => {
