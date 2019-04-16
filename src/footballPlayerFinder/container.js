@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Header from './components/Header';
-import FinderPlayerForm from './components/FinderPlayerForm';
-import TableResultFinder from './components/TableResultFinder';
+import Header from './components/header';
+import FinderPlayerForm from './components/finder';
+import TableResultFinder from './components/result';
 import { SELECT_OPTIONS, COMPONENT_TITLE } from './../constants';
 import { fetchFootballPlayers } from './actions';
 import { getFootballPlayers } from './selector';

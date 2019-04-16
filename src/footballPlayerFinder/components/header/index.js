@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 const Header = ({ title }) => {
   return(
-    <div className="section">
-      <div className="container">
-        <div className="title">{ title }</div>
+    <div className="section" data-test="section">
+      <div className="container" data-test="container">
+        <div className="title" data-test="title">{ title }</div>
       </div>
     </div>
   )

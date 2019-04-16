@@ -1,11 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { COMPONENT_TITLE } from './../../constants';
-import FinderPlayerForm from './FinderPlayerForm'
+import FinderPlayerForm from '../finder'
 
 const setUp = (props={}) => {
-  // const component = shallow(<Header title={ COMPONENT_TITLE } />);
-  const component = shallow(<FinderPlayerForm {...props} />);
+  const component = shallow(<FinderPlayerForm initialValues={ initialValues } 
+    onSubmit={ onSubmit }  />);
   return component;
 }
 
@@ -25,4 +24,4 @@ describe('FinderPlayerForm component', () => {
     expect(wrapper.length).toBe(1);
   });
   
-})
+});
