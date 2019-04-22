@@ -1,5 +1,5 @@
 import moment from 'moment';
-import { FETCH_FOOTBAL_PLAYERS } from './../constants';
+import { FETCH_FOOTBAL_PLAYERS } from './constants';
 import { urlGetFootballPlayers } from './../api/urls';
 
 const existName = (original, pretend) => original.toLowerCase().indexOf(pretend.toLowerCase()) !== -1;

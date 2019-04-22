@@ -51,7 +51,12 @@ const FinderPlayerForm = ({ onSubmit, initialValues, selectOptions }) => {
 FinderPlayerForm.propTypes = {
     onSubmit: PropTypes.func.isRequired,
     initialValues: PropTypes.object.isRequired,
-    selectOptions: PropTypes.array.isRequired
+    selectOptions: PropTypes.array.isRequired,
+    selectOptions: PropTypes.arrayOf(PropTypes.shape({
+        playerName: PropTypes.string,
+        position: PropTypes.string,
+        age: PropTypes.number
+    }))
 };
 
 export default FinderPlayerForm;

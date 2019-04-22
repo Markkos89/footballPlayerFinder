@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Header from './components/header';
 import FinderPlayerForm from './components/finder';
 import TableResultFinder from './components/result';
-import { SELECT_OPTIONS, COMPONENT_TITLE } from './../constants';
+import { SELECT_OPTIONS, COMPONENT_TITLE } from './constants';
 import { fetchFootballPlayers } from './actions';
 import { getFootballPlayers } from './selector';
 

@@ -1,4 +1,4 @@
-import { FETCH_FOOTBAL_PLAYERS } from './../constants';
+import { FETCH_FOOTBAL_PLAYERS } from './constants';
 
 export const footballPlayers = (state = {}, action) => {
   switch(action.type) {

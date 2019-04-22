@@ -41,13 +41,14 @@ const TableResultFinder = ({ players }) => {
   }
 };
 
-        // players.map((e, i) => {
-        //   const { name } = e;
-        //   return <p key={i}>{name}</p>
-        // })
-
 TableResultFinder.propTypes = {
-  players: PropTypes.array.isRequired
+  players: PropTypes.array.isRequired,
+  players: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    position: PropTypes.string,
+    nationality: PropTypes.string,
+    dateOfBirth: PropTypes.string
+  }))
 };
 
 export default TableResultFinder;
